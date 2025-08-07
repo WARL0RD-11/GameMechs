@@ -32,4 +32,8 @@ private:
 	TObjectPtr<class UInputAction> GMMoveAction;
 
 
+
+	//--------------------------------------------//
+	void Move(const FInputActionValue& InputActionValue);
+
 };

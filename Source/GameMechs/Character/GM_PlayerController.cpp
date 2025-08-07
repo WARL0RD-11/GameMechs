@@ -29,7 +29,7 @@ void AGM_PlayerController::SetupInputComponent()
 
 	GMInputComponent = CastChecked<UEnhancedInputComponent>(InputComponent);
 	if (GMInputComponent)
-	{
+	{    
 		if (GEngine)
 		{
 			GEngine->AddOnScreenDebugMessage(-1,
