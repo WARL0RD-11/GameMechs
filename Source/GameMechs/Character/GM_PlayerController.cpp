@@ -13,16 +13,6 @@ AGM_PlayerController::AGM_PlayerController()
 void AGM_PlayerController::BeginPlay()
 {
 	Super::BeginPlay();
-
-	check(GameMappingContext);
-
-	TObjectPtr<UEnhancedInputLocalPlayerSubsystem> Subsystem = ULocalPlayer::
-		GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(GetLocalPlayer());
-
-	if (Subsystem)
-	{
-		Subsystem->AddMappingContext(GameMappingContext, 0);
-	}
 }
 
 
