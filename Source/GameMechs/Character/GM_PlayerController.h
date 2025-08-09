@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
+#include "InputMappingContext.h"
 #include "GM_PlayerController.generated.h"
 
 /**
@@ -31,9 +32,12 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Input")
 	TObjectPtr<class UInputAction> GMMoveAction;
 
+	UPROPERTY(EditAnywhere, Category = "Input")
+	TObjectPtr<class UInputAction> GMLookAction;
 
 
-	//--------------------------------------------//
-	void Move(const FInputActionValue& InputActionValue);
+	//--------------------------------------------
+	void Move(const FInputActionValue &InputActionValue);
+	void Look(const FInputActionValue &InputActionValue);
 
 };
